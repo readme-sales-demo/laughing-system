@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "description": "This is a copy of Petstore for PeeWee the tuxedo cat.",
+    "description": "This is a copy of Petstore for PeeWee the tuxedo cat. This is a change",
     "version": "1.0.0",
     "title": "Swagger Petstore",
     "termsOfService": "http://swagger.io/terms/",
