@@ -5,6 +5,8 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    types: [opened, synchronize]
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -14,7 +16,7 @@ jobs:
 
       # Run GitHub Action to sync all OpenAPI files in the repo
       - name: GitHub Action
-        uses: readmeio/readme-micro@v2.0.0
+        uses: readmeio/readme-micro@v2.4.0
         
         with:
           readme-micro: "'**/*.{yaml,yml,json}' --key=${{ secrets.README_MICRO_SECRET }}"
